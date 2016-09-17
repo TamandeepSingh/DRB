@@ -76,12 +76,12 @@ body{
 	margin-top: 20vh;
 }
 #tagLine h1{
-	font-size: 56px;
+	font-size: 450%;
 	color: #3E3E3E;
 }
 
 #para{
-	font-size: 100%;
+	font-size: 120%;
 	font-family: Verdana, sans-serif;
 }
 
