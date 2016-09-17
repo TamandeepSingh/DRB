@@ -13,30 +13,33 @@
 		  	<header class="navbar navbar-fixed-top navbar-inverse" >
 		  	  <div class="container-fuid" >
 		  			<ul class="nav navbar-nav" >
-		  				<li class="nav-brand" ><a href="#"><strong> Projectional Views </strong></a></li>
-		  				<li><a href=""> Home </a></li>
-						<li class="active" ><form>  
-							<select ng-model="changeview" class="selectpicker" id="selMain">
-								<option value="template.html">Select -- </option>
-								<option value="/templates/tableSelect.html">Table View in Engineering Drawing</option>
-								<option value="/templates/beamSelect.html">Beam View in Engineering Drawing</option>
-							</select>
-						</form></li>
+		  				<li class="lists" ><a href="#/" id="logo" ><strong> DRB </strong></a></li>
+		  				<li class="lists" ><a href="#/"> Home </a></li>
+              <div class="dropdown" >
+                <button class="dropbtn" >Select Me</button>
+                <div class="dropdown-content" >
+                  <a href="#tables" >Table View in Engineering Drawing</a>
+                  <a href="#singlyBeam" >Beam View in Engineering Drawing</a>
+                  <a href="#doublyBeam" >nothing yet</a>
+                </div>
+              </div>
 					</ul>
 					<ul class="nav navbar-nav navbar-right" id="shiftLogin" >
-	      				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	      				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	    			</ul>
+	      				<li class="lists" ><a href="#/login"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+		    	</ul>
 	    	  </div>
 			</header>
-	    <div>
-		
-	    </div>
-	    <div id="whole" ng-include = "changeview" >
-	    </div>
-	    <script src="/js/angular.js" ></script>	
+	    <div ng-view id="whole" ></div>
+      <footer>
+
+      </footer>
+	    <script src="/js/angular.js" ></script>
 	    <script src="/js/control.js" ></script>
+      <script src="/js/singlyControl.js" ></script>
+      <script src="/js/tableControl.js" ></script>
 	    <script src="/js/jquery.js" ></script>
 	    <script src="/js/jspdf.min.js" ></script>
+      <script src="/js/angular_route.min.js" ></script>
+      <script src="/js/routes.js" ></script>
   </body>
 </html>
