@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+    <head>
+  		<title>DRB | Design Reinforcement of Beams</title>
+  		<meta charset="utf-8">
+  		<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="/bootstrap/css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" type="text/css" href="/css/mainstyle.css">
+	    <link rel="stylesheet" type="text/css" href="/css/beamStyle.css">
+	    <link rel="stylesheet" type="text/css" href="/css/tableStyle.css">
+    </head>
+    <body ng-controller="mycontroller" class="container-fluid" >
+		  	<header class="navbar navbar-fixed-top navbar-inverse" >
+		  	  <div class="container-fuid" >
+		  			<ul class="nav navbar-nav" >
+		  				<li class="lists" ><a href="#/" id="logo" ><strong> DRB </strong></a></li>
+		  				<li class="lists" ><a href="#/"> Home </a></li>
+              <div class="dropdown" >
+                <button class="dropbtn" >Select Me</button>
+                <div class="dropdown-content" >
+                  <a href="#tables" >Table Views </a>
+                  <a href="#Beam" >Beam Views </a>
+                  <a href="#singlyBeam">Singly Beam Views </a>
+                </div>
+              </div>
+					  </ul>
+  					<ul class="nav navbar-nav navbar-right" id="shiftLogin" >
+  	      				<li class="lists" ><a href="#/login"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+  		    	</ul>
+	    	  </div>
+			  </header>
+	    <div ng-view id="whole" ></div>
+      <footer>
+
+      </footer>
+	    <script src="/js/angular.js" ></script>
+	    <script src="/js/control.js" ></script>
+      <script src="/js/singlyControl.js" ></script>
+      <script src="/js/tableControl.js" ></script>
+	    <script src="/js/jquery.js" ></script>
+	    <script src="/js/jspdf.min.js" ></script>
+      <script src="/js/angular_route.min.js" ></script>
+      <script src="/js/routes.js" ></script>
+  </body>
+</html>
